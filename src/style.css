@@ -1,0 +1,97 @@
+:root {
+  --color-background: #103349;
+  --color-form: #ebeaea;
+  --color-button: #5035ff;
+  --color-text: #4a4e74;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-family: "Tahoma";
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--color-text);
+  padding: 0 55px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.container {
+  background-color: var(--color-form);
+  max-width: 600px;
+  padding-top: 40px;
+  border-radius: 15px;
+  box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.particles-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.particle {
+  height: 75px;
+  width: 75px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.roll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-button);
+  color: var(--color-form);
+  font-size: 1.7rem;
+  font-weight: 700;
+  height: 75px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  margin-bottom: 40px;
+}
+
+.roll-button:focus {
+  outline: none;
+}
+
+.roll-button:active {
+  box-shadow: inset 10px 10px 15px -5px rgba(0, 0, 0, 0.7);
+}
