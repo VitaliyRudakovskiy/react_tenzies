@@ -19,7 +19,7 @@ const App = () => {
 
   function generateNewDie() {
     return {
-      value: Math.floor(Math.random() * 1 + 1),
+      value: Math.floor(Math.random() * 8 + 1),
       isHeld: false,
       id: nanoid(),
     };
