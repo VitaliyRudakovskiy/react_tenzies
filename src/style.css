@@ -12,13 +12,16 @@
   padding: 0;
 }
 
+html {
+  overflow-y: hidden;
+}
+
 body {
   background-color: var(--color-background);
   font-family: "Karla", sans-serif;
   font-weight: 700;
   line-height: 1.6;
   overflow-x: hidden;
-  overflow-y: hidden;
 }
 
 main {
