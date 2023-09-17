@@ -48,9 +48,8 @@ h3 {
 .container {
   background-color: var(--color-form);
   width: 90%;
-  height: 90dvh;
   max-width: 600px;
-  padding: 40px 10px 40px 10px;
+  padding: 40px 10px 80px 10px;
   border-radius: 15px;
   box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.9);
   display: flex;
