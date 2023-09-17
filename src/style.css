@@ -101,40 +101,7 @@ h3 {
   box-shadow: inset 10px 10px 15px -5px rgba(0, 0, 0, 0.7);
 }
 
-@media screen and (max-width: 610px) {
-  .particles-container {
-    gap: 20px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .particles-container {
-    gap: 15px;
-  }
-
-  .particle {
-    height: 65px;
-    width: 65px;
-  }
-
-  .roll-button {
-    height: 65px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .particle {
-    height: 50px;
-    width: 50px;
-    font-size: 1.4rem;
-  }
-
-  .roll-button {
-    height: 50px;
-  }
-}
-
-@media screen and (max-width: 400px) {
+@media (min-width: 220px) and (max-width: 420px) {
   body {
     height: 90dvh;
   }
@@ -175,5 +142,38 @@ h3 {
     height: 40px;
     font-size: 1.2rem;
     margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 610px) {
+  .particles-container {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 550px) {
+  .particles-container {
+    gap: 15px;
+  }
+
+  .particle {
+    height: 65px;
+    width: 65px;
+  }
+
+  .roll-button {
+    height: 65px;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 460px) {
+  .particle {
+    height: 50px;
+    width: 50px;
+    font-size: 1.4rem;
+  }
+
+  .roll-button {
+    height: 50px;
   }
 }
