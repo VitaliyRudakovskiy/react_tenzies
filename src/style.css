@@ -49,7 +49,7 @@ h3 {
   background-color: var(--color-form);
   width: 90%;
   max-width: 600px;
-  padding: 40px 10px 80px 10px;
+  padding: 40px 10px 10px 10px;
   border-radius: 15px;
   box-shadow: 14px 14px 14px rgba(0, 0, 0, 0.9);
   display: flex;
@@ -135,23 +135,45 @@ h3 {
 }
 
 @media screen and (max-width: 400px) {
+  body {
+    height: 90dvh;
+  }
+
+  main {
+    padding: 10px 0;
+  }
+
+  .container {
+    padding: 10px 0;
+    box-shadow: none;
+  }
+
   h3 {
-    font-size: 1.4rem;
-    padding: 20px;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 
   .particles-container {
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 23px;
+    margin-bottom: 20px;
   }
 
   .particle {
-    height: 45px;
-    width: 45px;
-    font-size: 1.3rem;
+    height: 65px;
+    width: 65px;
+    font-size: 1.7rem;
+  }
+
+  .particle:last-child {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
   }
 
   .roll-button {
     height: 40px;
     font-size: 1.2rem;
+    margin-bottom: 20px;
   }
 }
